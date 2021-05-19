@@ -1,4 +1,6 @@
-import { resolve } from 'path';
+import { join } from 'path';
 import sqlite3 from 'better-sqlite3';
 const dbOpts = { readonly: true };
-export const db = sqlite3(resolve(__dirname, '../dist/chinook.sqlite'), dbOpts);
+
+const path = join(__dirname, '..', 'dist', 'chinook.sqlite');
+export const db = sqlite3(path, dbOpts);

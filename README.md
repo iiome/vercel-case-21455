@@ -22,3 +22,17 @@ A complex build script is used (for the sake of the sample simplified here).
 "BillingState":null,"BillingCountry":"India","BillingPostalCode":"110017",
 "Total":1.99 }
 ```
+
+## What's happening
+
+### When deploying from vercel cli
+
+Step 3 works as expected
+
+_it seems to take the files in `dist/` from the local filesystem_.
+
+### When deploying from GitHub
+
+Step 3 results in an error
+
+_files being build are not included_
